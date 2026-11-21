@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="האימון שלי" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#6d28d9" />
+  <meta name="color-scheme" content="light" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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" />
+  <title>האימון שלי — יומן כוח ועיצוב</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --primary: #7c3aed;
+      --primary-soft: #f3e8ff;
+      --accent: #ec4899;
+      --accent-soft: #fce7f3;
+      --teal: #0d9488;
+      --teal-soft: #ccfbf1;
+      --amber: #d97706;
+      --amber-soft: #fef3c7;
+      --danger: #dc2626;
+      --danger-soft: #fee2e2;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --radius: 16px;
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding-bottom: calc(95px + var(--safe-bottom));
+      line-height: 1.45;
+    }
+    header {
+      background: linear-gradient(135deg, #6d28d9, #a21caf);
+      color: #fff;
+      padding: calc(16px + var(--safe-top)) 16px 16px;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      box-shadow: 0 2px 12px rgba(109,40,217,0.2);
+    }
+    .header-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .header-title { margin: 0; font-size: 1.25rem; font-weight: 800; }
+    .header-sub { font-size: 0.8rem; opacity: 0.9; margin-top: 2px; }
+    .fatigue-btn {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .fatigue-btn.active { background: #fef08a; color: #713f12; border-color: #fde047; }
+    .tabs {
+      display: flex;
+      gap: 6px;
+      margin-top: 12px;
+      background: rgba(255,255,255,0.15);
+      padding: 4px;
+      border-radius: 12px;
+    }
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 8px 4px;
+      border-radius: 9px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: rgba(255,255,255,0.88);
+      border: none;
+      background: transparent;
+    }
+    .tab.active { background: #fff; color: var(--primary); box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
+
+    main { max-width: 680px; margin: 0 auto; padding: 14px 12px; }
+    .hidden { display: none !important; }
+
+    .banner {
+      background: var(--amber-soft);
+      border: 1px solid #fcd34d;
+      color: #92400e;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 0.84rem;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 18px 2px 8px;
+    }
+    .section-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    }
+    .warmup-card { border-right: 4px solid var(--amber); background: #fffbeb; }
+    .rewarmup-card { border-right: 4px solid var(--accent); background: #fdf2f8; }
+    .check-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 7px 0;
+      border-bottom: 1px dashed rgba(0,0,0,0.08);
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+    .check-row:last-child { border-bottom: none; }
+    .check-row input { width: 20px; height: 20px; accent-color: var(--primary); margin-top: 2px; flex-shrink: 0; }
+
+    .ex-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+    .ex-name { font-size: 1.05rem; font-weight: 800; margin: 0; color: var(--text); }
+    .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 5px; }
+    .badge {
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .badge-machine { background: var(--primary-soft); color: var(--primary); }
+    .badge-machine.tbd { background: var(--amber-soft); color: #92400e; border: 1px dashed #f59e0b; }
+    .badge-target { background: #f3f4f6; color: #374151; }
+    .badge-opt { background: var(--accent-soft); color: #9d174d; }
+
+    .icon-btn {
+      background: #f3f4f6;
+      border: 1px solid var(--border);
+      color: #374151;
+      border-radius: 10px;
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .ex-meta {
+      margin-top: 8px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      background: #f9fafb;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid #f3f4f6;
+    }
+    .ex-meta strong { color: #374151; }
+    .tip-toggle {
+      background: none;
+      border: none;
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 0 0;
+      cursor: pointer;
+    }
+    .tip-box {
+      margin-top: 6px;
+      font-size: 0.82rem;
+      color: #374151;
+      background: #faf5ff;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border-right: 3px solid var(--primary);
+    }
+
+    .rec-box {
+      margin-top: 10px;
+      padding: 9px 11px;
+      border-radius: 11px;
+      font-size: 0.83rem;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .rec-baseline { background: #f3f4f6; color: #374151; }
+    .rec-add { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+    .rec-up { background: var(--teal-soft); color: #115e59; border: 1px solid #5eead4; }
+    .rec-consolidate { background: var(--amber-soft); color: #92400e; border: 1px solid #fcd34d; }
+    .rec-hold { background: var(--danger-soft); color: #991b1b; border: 1px solid #fca5a5; }
+    .rec-title { font-size: 0.78rem; opacity: 0.9; font-weight: 800; }
+
+    .sets-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .sets-table th {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 700;
+      padding: 4px 2px 6px;
+      text-align: center;
+    }
+    .sets-table td { padding: 4px 3px; text-align: center; vertical-align: middle; }
+    .set-num {
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: #f3f4f6;
+      color: #4b5563;
+      font-size: 0.78rem;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .prev-val { font-size: 0.74rem; color: var(--muted); white-space: nowrap; }
+    .num-input, .rir-select {
+      width: 100%;
+      max-width: 72px;
+      padding: 8px 4px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      text-align: center;
+      font-size: 0.95rem;
+      font-weight: 700;
+      background: #fff;
+      color: var(--text);
+    }
+    .num-input:focus, .rir-select:focus { outline: none; border-color: var(--primary); background: #faf5ff; }
+    .done-btn {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      border: 1.5px solid var(--border);
+      background: #fff;
+      color: #9ca3af;
+      font-size: 1.05rem;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .done-btn.checked { background: var(--teal); border-color: var(--teal); color: #fff; }
+    tr.set-done td { opacity: 0.85; }
+    tr.set-done .set-num { background: var(--teal-soft); color: var(--teal); }
+
+    .ex-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+    .small-btn {
+      background: none; border: none; color: var(--muted);
+      font-size: 0.8rem; font-weight: 700; cursor: pointer; padding: 4px 6px;
+    }
+    .small-btn:hover { color: var(--primary); }
+
+    .primary-btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #7c3aed, #db2777);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(124,58,237,0.28);
+      margin-top: 8px;
+    }
+    .secondary-btn {
+      width: 100%;
+      padding: 11px;
+      border: 1.5px solid var(--primary);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--primary);
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    .danger-btn {
+      background: var(--danger-soft);
+      color: var(--danger);
+      border: 1px solid #fecaca;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .timer-bar {
+      position: fixed;
+      bottom: calc(10px + var(--safe-bottom));
+      left: 12px;
+      right: 12px;
+      max-width: 656px;
+      margin: 0 auto;
+      background: #111827;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+      z-index: 60;
+    }
+    .timer-time { font-size: 1.35rem; font-weight: 900; font-variant-numeric: tabular-nums; color: #f472b6; }
+    .timer-btns { display: flex; gap: 6px; }
+    .t-btn {
+      background: rgba(255,255,255,0.14);
+      border: none;
+      color: #fff;
+      padding: 7px 10px;
+      border-radius: 9px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .t-btn.stop { background: #ef4444; }
+
+    .modal-backdrop {
+      position: fixed; inset: 0; background: rgba(17,24,39,0.55);
+      display: flex; align-items: flex-end; justify-content: center;
+      z-index: 80; padding: 0;
+    }
+    .modal {
+      background: #fff;
+      width: 100%;
+      max-width: 640px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 22px 22px 0 0;
+      padding: 18px 16px calc(22px + var(--safe-bottom));
+    }
+    .modal h3 { margin: 0 0 12px; font-size: 1.1rem; color: var(--primary); }
+    .field { margin-bottom: 10px; }
+    .field label { display: block; font-size: 0.8rem; font-weight: 700; color: #374151; margin-bottom: 4px; }
+    .field input, .field textarea, .field select {
+      width: 100%;
+      padding: 10px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.92rem;
+      font-family: inherit;
+    }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+
+    .hist-item { border-right: 4px solid var(--primary); }
+    .hist-date { font-weight: 800; color: var(--primary); font-size: 0.95rem; }
+    .hist-ex { font-size: 0.84rem; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .hist-ex:last-child { border-bottom: none; }
+    .toast {
+      position: fixed; top: calc(74px + var(--safe-top)); left: 50%; transform: translateX(-50%);
+      background: #111827; color: #fff; padding: 10px 16px; border-radius: 12px;
+      font-size: 0.85rem; font-weight: 700; z-index: 100; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    html { -webkit-text-size-adjust: 100%; }
+    body { overscroll-behavior-y: none; }
+    button, .tab, .check-row, .badge { touch-action: manipulation; }
+    .tab { font-size: 0.78rem; padding: 8px 2px; white-space: nowrap; }
+    .m-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 8px; margin-bottom: 8px; }
+    .m-title { font-weight: 800; color: var(--primary); font-size: 0.98rem; }
+    .m-status { font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 8px; background: #f3f4f6; color: #374151; }
+    .m-status.due { background: var(--amber-soft); color: #92400e; }
+    .m-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 8px; }
+    .m-grid > .field { min-width: 0; }
+    .m-row { border-top: 1px solid #f3f4f6; padding: 8px 0; font-size: 0.84rem; }
+    .m-row .d { font-size: 0.72rem; font-weight: 700; color: var(--muted); margin: 0 4px; }
+    .m-row .d.good { color: var(--teal); }
+    .num-input, .rir-select, .field input, .field textarea, .field select { font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div>
+      <h1 class="header-title">האימון שלי — עיצוב וכוח</h1>
+      <div class="header-sub">Full Body • התקדמות חכמה (Double Progression + RIR)</div>
+    </div>
+    <button id="fatigueToggle" class="fatigue-btn" onclick="toggleFatigueMode()">⚡ יום רגיל</button>
+  </div>
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('workout', this)">🏋️‍♀️ אימון</button>
+    <button class="tab" onclick="switchTab('metrics', this)">📏 מדדים</button>
+    <button class="tab" onclick="switchTab('history', this)">📊 היסטוריה</button>
+    <button class="tab" onclick="switchTab('settings', this)">⚙️ גיבוי</button>
+  </div>
+</header>
+
+<main>
+  <section id="tab-workout">
+    <div id="fatigueBanner" class="banner hidden">
+      🔋 <strong>מצב עייפות / גירעון פעיל:</strong> המטרה היום היא לשמור על טכניקה נקייה ועל המשקלים הקיימים (RIR 2) בלי לרדוף אחרי שיאים. גם אימון שימור בונה עקביות!
+    </div>
+
+    <div class="card warmup-card">
+      <div style="font-weight:800; color:#92400e; margin-bottom:4px;">🔥 שלב 1: חימום פתיחה (7–8 דקות)</div>
+      <label class="check-row"><input type="checkbox" id="wu1" onchange="wuState.wu1=this.checked"> <span><strong>5 דקות הליכון:</strong> הליכה מהירה בשיפוע קל (4%–6%).</span></label>
+      <label class="check-row"><input type="checkbox" id="wu2" onchange="wuState.wu2=this.checked"> <span><strong>מוביליות אגן (2.5 דק׳):</strong> 8 פתיחות ירך לכל צד + 10 סקוואט משקל גוף איטיים.</span></label>
+      
+    </div>
+
+    <div id="exercisesContainer"></div>
+
+    <button class="secondary-btn" onclick="openEditModal(null)">➕ הוספת תרגיל חדש לתוכנית</button>
+    <button class="primary-btn" onclick="saveWorkout()">✅ סיום ושמירת האימון של היום</button>
+  </section>
+
+  <section id="tab-metrics" class="hidden">
+    <div id="metricsRoot"></div>
+  </section>
+
+  <section id="tab-history" class="hidden">
+    <div class="card">
+      <div style="font-weight:800; margin-bottom:6px;">📈 סיכום כללי</div>
+      <div id="statsSummary" style="font-size:0.88rem; color:var(--muted);"></div>
+    </div>
+    <div id="historyList"></div>
+  </section>
+
+  <section id="tab-settings" class="hidden">
+    <div class="card">
+      <h3 style="margin:0 0 8px; color:var(--primary);">💾 גיבוי ושחזור נתונים</h3>
+      <p style="font-size:0.84rem; color:var(--muted); margin-top:0;">
+        הנתונים נשמרים מקומית על האייפון שלך. מומלץ פעם בחודש להעתיק גיבוי ולשלוח לעצמך בוואטסאפ או לשמור בפתקים.
+      </p>
+      <button class="secondary-btn" onclick="copyBackup()">📋 העתקת גיבוי (טקסט JSON)</button>
+      <button class="secondary-btn" onclick="downloadBackup()">📤 שיתוף גיבוי (וואטסאפ / פתקים)</button>
+      <div class="field" style="margin-top:12px;">
+        <label>שחזור מגיבוי (הדביקי כאן את קוד הגיבוי):</label>
+        <textarea id="restoreInput" rows="3" placeholder='{"exercises":...}'></textarea>
+      </div>
+      <button class="primary-btn" style="margin-top:4px;" onclick="restoreBackup()">♻️ שחזר נתונים מגיבוי</button>
+    </div>
+
+    <div class="card">
+      <h3 style="margin:0 0 8px; color:var(--primary);">👁️ תרגילים מוסתרים / איפוס</h3>
+      <div id="hiddenExercisesList" style="font-size:0.85rem; color:var(--muted);"></div>
+      <button class="danger-btn" onclick="resetToDefaultProgram()">🔄 שחזר תוכנית מקורית (שומר היסטוריה)</button>
+    </div>
+  </section>
+</main>
+
+<div id="timerBar" class="timer-bar hidden">
+  <div>
+    <div style="font-size:0.72rem; color:#9ca3af;" id="timerLabel">מנוחה בין סטים</div>
+    <div class="timer-time" id="timerDisplay">01:30</div>
+  </div>
+  <div class="timer-btns">
+    <button class="t-btn" onclick="adjustTimer(-15)">-15ש׳</button>
+    <button class="t-btn" onclick="adjustTimer(15)">+15ש׳</button>
+    <button class="t-btn stop" onclick="stopTimer()">עצור</button>
+  </div>
+</div>
+
+<div id="editModalBackdrop" class="modal-backdrop hidden" onclick="if(event.target===this) closeEditModal()">
+  <div class="modal">
+    <h3 id="modalTitle">✏️ עריכת פרטי תרגיל</h3>
+    <input type="hidden" id="editId" />
+    <div class="field">
+      <label>שם התרגיל</label>
+      <input type="text" id="editName" placeholder="לדוגמה: הרחקת ירכיים במכונה" />
+    </div>
+    <div class="grid-2">
+      <div class="field">
+        <label>קבוצת שריר / בלוק</label>
+        <select id="editGroup">
+          <option value="lower">רגליים וישבן</option>
+          <option value="upper">פלג גוף עליון</option>
+          <option value="core">ליבה עמוקה</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>מספר מכשיר (עדכני בקלות במכון!)</label>
+        <input type="text" id="editMachine" placeholder="לדוגמה: 61 או פולי עליון" />
+      </div>
+    </div>
+    <div class="field">
+      <label>כיווני מושב, כריות והערות מכשיר</label>
+      <input type="text" id="editSettings" placeholder="גובה מושב, חור כרית, סוג מוט..." />
+    </div>
+    <div class="field">
+      <label>טיפים ודגשי טכניקה</label>
+      <textarea id="editTips" rows="2"></textarea>
+    </div>
+    <div class="grid-3">
+      <div class="field"><label>סטים</label><input type="number" id="editSets" min="1" max="8" /></div>
+      <div class="field"><label>מינ׳ חזרות/שנ׳</label><input type="number" id="editMinReps" min="1" max="120" /></div>
+      <div class="field"><label>מקס׳ חזרות/שנ׳</label><input type="number" id="editMaxReps" min="1" max="180" /></div>
+    </div>
+    <div class="grid-3">
+      <div class="field"><label>קפיצת משקל (ק״ג)</label><input type="number" step="0.1" id="editStep" /></div>
+      <div class="field"><label>מנוחה (שניות)</label><input type="number" step="5" id="editRest" /></div>
+      <div class="field">
+        <label>סוג מדידה</label>
+        <select id="editMode">
+          <option value="weight">משקל + חזרות</option>
+          <option value="bw">משקל גוף + חזרות</option>
+          <option value="timed">זמן (שניות)</option>
+        </select>
+      </div>
+    </div>
+    <label style="display:flex; align-items:center; gap:8px; font-size:0.85rem; margin:8px 0;">
+      <input type="checkbox" id="editOptional" style="width:18px; height:18px;" /> סמני כתרגיל אופציונלי (לימים קצרים)
+    </label>
+    <div class="grid-2" style="margin-top:12px;">
+      <button class="primary-btn" style="margin:0;" onclick="saveEditModal()">💾 שמירת שינויים</button>
+      <button class="secondary-btn" style="margin:0;" onclick="closeEditModal()">ביטול</button>
+    </div>
+    <div id="editExtraBtns" class="grid-2" style="margin-top:8px;">
+      <button class="danger-btn" style="margin:0; background:#f3f4f6; color:#374151; border-color:#d1d5db;" onclick="toggleHideEditing()">🙈 הסתר תרגיל</button>
+      <button class="danger-btn" style="margin:0;" onclick="deleteEditingExercise()">🗑️ מחק תרגיל</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script>
+const STORAGE_KEY = 'sculpt_workout_app_v1';
+
+const DEFAULT_EXERCISES = [
+  {
+    id: 'hack_squat', name: 'האק סקוואט', group: 'lower', machine: '61',
+    settings: 'רגליים גבוה ורחב מעט על הפלטה, בהונות 15°–30° החוצה, גב ואגן צמודים למשענת',
+    tips: 'בצעי 2 סטים חימום לפני (50%×8, 75%×4). רדי בשליטה (2–3 שנ׳) עד לפני שהאגן מתנתק מהכרית, דחפי דרך כל כף הרגל בלי לנעול ברכיים. רשמי בעקביות את משקל הפלטות שהוספת.',
+    sets: 3, minReps: 8, maxReps: 12, stepKg: 2.5, restSec: 120, mode: 'weight', defaultWeight: '', optional: false, hidden: false
+  },
+  {
+    id: 'hip_thrust', name: 'היפ טראסט במכונה', group: 'lower', machine: '35',
+    settings: 'כרית על קפל האגן, שוקיים בניצב לרצפה (90°) בנקודה העליונה',
+    tips: 'בצעי סט חימום אחד (60%×6–8). למעלה בצעי גלגול אגן לאחור (Scoop), אספי צלעות, שמרי מבט קדימה וכווצי את הישבן חזק למשך שנייה.',
+    sets: 3, minReps: 10, maxReps: 12, stepKg: 5, restSec: 120, mode: 'weight', defaultWeight: '', optional: false, hidden: false
+  },
+  {
+    id: 'leg_curl', name: 'כפיפות ברכיים בשכיבה', group: 'lower', machine: 'לעדכון במכון',
+    settings: 'גובה מכונה: חור 1 מימין | כרית רגליים: חור 2',
+    tips: 'הדביקי את האגן למזרן ואל תרימי ישבן בכפיפה. ירידה איטית של 2–3 שנ׳. 11.3 ק״ג = 25 ליברות (קפיצה של 5 ליברות = 2.3 ק״ג).',
+    sets: 3, minReps: 8, maxReps: 15, stepKg: 2.3, restSec: 90, mode: 'weight', defaultWeight: 11.3, optional: false, hidden: false
+  },
+  {
+    id: 'hip_abduction', name: 'הרחקת ירכיים במכונה', group: 'lower', machine: 'לעדכון במכון',
+    settings: 'ישיבה מעט קדימה על המושב + הטיית גו קדימה בגב ישר (אחיזה מלפנים)',
+    tips: 'ההטיה קדימה מגבירה הפעלת ישבן עליון ומפחיתה עומס בצד הירך הקדמית. דחפי החוצה מהברכיים, עצרי שנייה בשיא הפתיחה והחזירי לאט בלי לטרוק פלטות.',
+    sets: 3, minReps: 12, maxReps: 15, stepKg: 2.5, restSec: 75, mode: 'weight', defaultWeight: '', optional: false, hidden: false
+  },
+  {
+    id: 'seated_row', name: 'חתירה בישיבה במכונה', group: 'upper', machine: '4',
+    settings: 'גובה מושב: 6 | כרית חזה: חור 1',
+    tips: 'במשיכה הורידי כתפיים מהאוזניים, משכי מרפקים אחורה וקרבי שכמות לשנייה.',
+    sets: 3, minReps: 8, maxReps: 12, stepKg: 2.5, restSec: 90, mode: 'weight', defaultWeight: '', optional: false, hidden: false
+  },
+  {
+    id: 'lat_pulldown', name: 'משיכה מטה במכונה ייעודית', group: 'upper', machine: '39',
+    settings: 'מוט ארוך אפור | אחיזה רחבה מעט מרוחב הכתפיים',
+    tips: 'משכי מרפקים מטה לכיוון הצלעות תוך פתיחת בית חזה קלה, בלי להתנדנד לאחור עם הגב התחתון.',
+    sets: 3, minReps: 10, maxReps: 12, stepKg: 2.5, restSec: 90, mode: 'weight', defaultWeight: '', optional: false, hidden: false
+  },
+  {
+    id: 'chest_press', name: 'לחיצת חזה במכונה', group: 'upper', machine: '2',
+    settings: 'גובה מושב: 4 | ידיות אחיזה: חור הכי קרוב',
+    tips: 'הצמידי שכמות למשענת, שמרי מרפקים בזווית ~45° מהגוף (לא בקו הכתפיים), לחצי חלק ועצרי רגע לפני נעילת מרפקים.',
+    sets: 3, minReps: 8, maxReps: 15, stepKg: 2.5, restSec: 90, mode: 'weight', defaultWeight: 15, optional: false, hidden: false
+  },
+  {
+    id: 'shoulder_press', name: 'לחיצת כתפיים בישיבה', group: 'upper', machine: '3',
+    settings: 'גובה מושב: 2 | אחיזה רחבה',
+    tips: 'אספי בטן כדי למנוע הקשתה בגב התחתון. הורידי בשליטה עד גובה האוזניים/סנטר ולחצי מעלה בלי לשחרר מתח.',
+    sets: 3, minReps: 8, maxReps: 12, stepKg: 2.5, restSec: 90, mode: 'weight', defaultWeight: '', optional: false, hidden: false
+  },
+  {
+    id: 'triceps_pushdown', name: 'פשיטות מרפקים בפולי עליון', group: 'upper', machine: 'פולי עליון',
+    settings: 'חבל או מוט קצר | מרפקים צמודים למותניים',
+    tips: 'פיניש ממוקד ליד אחורית (4.5 דק׳). רק האמה זזה — שמרי מרפקים קבועים ויישרי מלא מטה. ביום לחוץ אפשר לדלג ללא ייסורי מצפון.',
+    sets: 3, minReps: 10, maxReps: 15, stepKg: 2.5, restSec: 60, mode: 'weight', defaultWeight: '', optional: true, hidden: false
+  },
+  {
+    id: 'dead_bug', name: 'דד-באג (ליבה עמוקה)', group: 'core', machine: 'מזרן',
+    settings: 'שכיבה על הגב, ידיים לתקרה, ברכיים ב-90°',
+    tips: 'גב תחתון מודבק לרצפה ללא שום רווח! יישרי יד ורגל נגדית לאט תוך הוצאת אוויר (נשיפה). הזיני מספר חזרות לכל צד.',
+    sets: 2, minReps: 10, maxReps: 12, stepKg: 0, restSec: 45, mode: 'bw', defaultWeight: 0, optional: false, hidden: false
+  },
+  {
+    id: 'plank', name: 'פלאנק / פלאנק צידי', group: 'core', machine: 'מזרן',
+    settings: 'אמות מתחת לכתפיים, בטן אסופה, ישבן מכווץ',
+    tips: 'הזיני שניות שהחזקת. מומלץ לשלב סט קדמי וסט פלאנק צידי (או שני סטים פלאנק צידי) להפעלה מרבית של שריר הרחב-בטני.',
+    sets: 2, minReps: 30, maxReps: 60, stepKg: 0, restSec: 45, mode: 'timed', defaultWeight: 0, optional: false, hidden: false
+  },
+  {
+    id: 'controlled_crunch', name: 'כפיפות בטן מבוקרות', group: 'core', machine: 'מזרן',
+    settings: 'ברכיים כפופות, ידיים ברקות בלי למשוך צוואר',
+    tips: 'עלייה איטית מתוך קירוב הצלעות לאגן בנשיפה, עצירה לשנייה בשיא הכיווץ וירידה איטית ומבוקרת.',
+    sets: 2, minReps: 12, maxReps: 15, stepKg: 0, restSec: 45, mode: 'bw', defaultWeight: 0, optional: false, hidden: false
+  }
+];
+
+let state = loadState();
+let fatigueMode = false;
+let sessionDraft = {};
+let wuState = { wu1: false, wu2: false, wu3: false, rw1: false, rw2: false };
+let timerInterval = null;
+let timerRemaining = 0;
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && Array.isArray(parsed.exercises)) return normalizeState(parsed);
+    }
+  } catch (e) {}
+  return normalizeState({ exercises: JSON.parse(JSON.stringify(DEFAULT_EXERCISES)), history: [] });
+}
+
+function persistState() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+  catch (e) { showToast('⚠️ השמירה במכשיר נכשלה — העתיקי גיבוי מלשונית ⚙️'); }
+}
+
+function getLastExerciseLog(exId) {
+  for (let i = state.history.length - 1; i >= 0; i--) {
+    const found = state.history[i].entries.find(e => e.id === exId && e.sets && e.sets.length > 0);
+    if (found) return found.sets;
+  }
+  return null;
+}
+
+function computeRecommendation(ex, lastSets) {
+  const step = Number(ex.stepKg) || 2.5;
+  if (!lastSets || lastSets.length === 0) {
+    const wTxt = ex.mode === 'weight' && ex.defaultWeight !== '' ? `התחילי ב-${ex.defaultWeight} ק״ג` : (ex.mode === 'weight' ? 'בחרי משקל התחלתי' : 'במשקל גוף');
+    const unit = ex.mode === 'timed' ? 'שניות' : 'חזרות';
+    return {
+      cls: 'rec-baseline',
+      title: '🎯 נקודת פתיחה (אימון ראשון)',
+      text: `${wTxt} בטווח ${ex.minReps}–${ex.maxReps} ${unit}, והשאירי 2 חזרות במאגר (RIR 2).`,
+      suggestedWeight: ex.defaultWeight !== '' ? ex.defaultWeight : ''
+    };
+  }
+
+  const weights = lastSets.map(s => Number(s.weight) || 0);
+  const reps = lastSets.map(s => Number(s.reps) || 0).filter(r => r > 0);
+  const rirs = lastSets.map(s => s.rir !== '' && s.rir !== undefined ? Number(s.rir) : 2);
+  if (reps.length === 0) {
+    return { cls: 'rec-baseline', title: '🎯 המלצה', text: 'הזיני נתונים כדי לקבל המלצה מדויקת.', suggestedWeight: ex.defaultWeight || '' };
+  }
+
+  const baseW = Math.max(...weights);
+  const avgRir = rirs.reduce((a, b) => a + b, 0) / rirs.length;
+  const minRep = Math.min(...reps);
+  const avgRep = reps.reduce((a, b) => a + b, 0) / reps.length;
+  const allHitTop = reps.length >= ex.sets && reps.every(r => r >= ex.maxReps);
+  const anyBelowMin = reps.some(r => r < ex.minReps);
+
+  if (fatigueMode) {
+    const wLabel = ex.mode === 'weight' ? `על ${baseW} ק״ג` : '';
+    return {
+      cls: 'rec-consolidate',
+      title: '🔋 התאמה ליום עייפות / גירעון',
+      text: `הישארי ${wLabel} בטווח ${ex.minReps}–${Math.max(ex.minReps, Math.round(avgRep))} (RIR 2) ושמרי על איכות תנועה.`,
+      suggestedWeight: baseW
+    };
+  }
+
+  if (ex.mode === 'timed') {
+    if (allHitTop && avgRir >= 1) {
+      const nextSec = Math.min(ex.maxReps + 10, 90);
+      return {
+        cls: 'rec-up',
+        title: '🚀 שדרוג זמן!',
+        text: `שלטת מעולה ב-${ex.maxReps} שניות! נסי להגיע ל-${nextSec} שניות או לעבור לפלאנק צידי.`,
+        suggestedWeight: 0
+      };
+    }
+    const targetSec = Math.min(ex.maxReps, Math.round(avgRep + 5));
+    return {
+      cls: 'rec-add',
+      title: '📈 התקדמות הדרגתית',
+      text: `נסי להוסיף כ-5 שניות ולהגיע ל-${targetSec} שניות תוך שמירה על בטן אסופה.`,
+      suggestedWeight: 0
+    };
+  }
+
+  if (allHitTop && avgRir >= 1) {
+    if (ex.mode === 'weight') {
+      const newW = Math.round((baseW + step) * 10) / 10;
+      return {
+        cls: 'rec-up',
+        title: `🚀 זמן להעלות משקל ל-${newW} ק״ג!`,
+        text: `סיימת את כל הסטים ב-${ex.maxReps} חזרות בשליטה. העלי ל-${newW} ק״ג וכווני ל-${ex.minReps}–${Math.min(ex.maxReps, ex.minReps + 2)} חזרות (RIR 2).`,
+        suggestedWeight: newW
+      };
+    }
+    return {
+      cls: 'rec-up',
+      title: '🚀 שליטה מלאה!',
+      text: `הגעת ל-${ex.maxReps} חזרות בכל הסטים! האטי את קצב הירידה ל-3 שנ׳ או הוסיפי עצירה בשיא הכיווץ.`,
+      suggestedWeight: 0
+    };
+  }
+
+  if (anyBelowMin && avgRir <= 0.5) {
+    const deloadW = Math.max(0, Math.round((baseW - step) * 10) / 10);
+    return {
+      cls: 'rec-hold',
+      title: '🛡️ שמירה / הורדה זמנית',
+      text: ex.mode === 'weight'
+        ? `באימון הקודם ירדת מתחת ל-${ex.minReps} חזרות בקרבה לכשל. הישארי על ${baseW} ק״ג (או רדי ל-${deloadW} ק״ג אם עייפה) והתמקדי בטכניקה.`
+        : `התמקדי בטכניקה נקייה ובהגעה ל-${ex.minReps} חזרות בשליטה.`,
+      suggestedWeight: baseW
+    };
+  }
+
+  if (allHitTop && avgRir < 1) {
+    return {
+      cls: 'rec-consolidate',
+      title: '⚖️ אימון ביסוס לפני עלייה',
+      text: ex.mode === 'weight'
+        ? `הגעת ל-${ex.maxReps} חזרות אבל על גבול הכשל (RIR 0). בצעי אימון ביסוס נוסף על ${baseW} ק״ג עם 1–2 חזרות במאגר.`
+        : `בצעי אימון ביסוס נוסף ב-${ex.maxReps} חזרות עם נשימה ושליטה מלאה.`,
+      suggestedWeight: baseW
+    };
+  }
+
+  const nextRep = Math.min(ex.maxReps, minRep + 1);
+  return {
+    cls: 'rec-add',
+    title: `📈 הוסיפי חזרה (+1) — יעד: ${nextRep}+ חזרות`,
+    text: ex.mode === 'weight'
+      ? `הישארי על ${baseW} ק״ג ונסי להגיע ל-${nextRep}–${ex.maxReps} חזרות בכל סט (RIR 1–2).`
+      : `נסי להגיע ל-${nextRep}–${ex.maxReps} חזרות איטיות ומבוקרות בכל סט.`,
+    suggestedWeight: baseW
+  };
+}
+
+function initDraftForExercise(ex, lastSets, rec) {
+  if (!sessionDraft[ex.id]) {
+    sessionDraft[ex.id] = [];
+    for (let i = 0; i < ex.sets; i++) {
+      const prev = lastSets && lastSets[i] ? lastSets[i] : null;
+      sessionDraft[ex.id].push({
+        weight: rec.suggestedWeight !== '' && rec.suggestedWeight !== undefined ? rec.suggestedWeight : (prev ? prev.weight : ''),
+        reps: '',
+        rir: '2',
+        done: false
+      });
+    }
+  } else {
+    while (sessionDraft[ex.id].length < ex.sets) {
+      const lastRow = sessionDraft[ex.id][sessionDraft[ex.id].length - 1] || { weight: rec.suggestedWeight || '', reps: '', rir: '2', done: false };
+      sessionDraft[ex.id].push({ weight: lastRow.weight, reps: '', rir: '2', done: false });
+    }
+  }
+}
+
+function renderWorkout() {
+  const container = document.getElementById('exercisesContainer');
+  container.innerHTML = '';
+
+  const groups = [
+    { key: 'lower', label: '🍑 בלוק 3: רגליים וישבן' },
+    { key: 'upper', label: '💪 בלוק 4: גב, חזה, כתפיים ויד אחורית' },
+    { key: 'core',  label: '🔥 בלוק 5: ליבה עמוקה (מותן אסופה)' }
+  ];
+
+  groups.forEach(grp => {
+    if (grp.key === 'lower') {
+      const rw = document.createElement('div');
+      rw.className = 'card rewarmup-card';
+      rw.innerHTML = `
+        <div style="font-weight:800; color:#9d174d; margin-bottom:4px;">🎗️ בלוק 2: חימום כתפיים בגומייה דקה (1.5–2 דקות)</div>
+        <label class="check-row"><input type="checkbox" ${wuState.rw1 ? 'checked' : ''} onchange="wuState.rw1=this.checked"> <span><strong>חד-צדדי (כל יד בנפרד):</strong> 10 סיבובים חיצוניים לכתף לכל יד בגומייה דקה.</span></label>
+        <label class="check-row"><input type="checkbox" ${wuState.rw2 ? 'checked' : ''} onchange="wuState.rw2=this.checked"> <span><strong>דו-צדדי (שתיהן יחד):</strong> 12 פתיחות ידיים (Band Pull-Aparts) להפעלת שכמות וכתף אחורית.</span></label>
+      `;
+      container.appendChild(rw);
+    }
+
+    const groupExs = state.exercises.filter(e => e.group === grp.key && !e.hidden);
+    if (groupExs.length === 0) return;
+
+    const sh = document.createElement('div');
+    sh.className = 'section-header';
+    sh.innerHTML = `<div class="section-title">${grp.label}</div>`;
+    container.appendChild(sh);
+
+    groupExs.forEach(ex => {
+      const lastSets = getLastExerciseLog(ex.id);
+      const rec = computeRecommendation(ex, lastSets);
+      initDraftForExercise(ex, lastSets, rec);
+      const draftSets = sessionDraft[ex.id];
+      const isTbd = !ex.machine || ex.machine.includes('לעדכון');
+      const unitLabel = ex.mode === 'timed' ? 'שנ׳' : 'חזרות';
+
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <div class="ex-top">
+          <div>
+            <h3 class="ex-name">${escapeHtml(ex.name)}</h3>
+            <div class="badges">
+              <span class="badge badge-machine ${isTbd ? 'tbd' : ''}" onclick="openEditModal('${ex.id}')" style="cursor:pointer;">
+                🏷️ ${isTbd ? 'מכשיר: לעדכון במכון (לחצי)' : 'מכשיר ' + escapeHtml(ex.machine)}
+              </span>
+              <span class="badge badge-target">${ex.sets}×${ex.minReps}–${ex.maxReps} ${unitLabel}</span>
+              ${ex.optional ? '<span class="badge badge-opt">אופציונלי</span>' : ''}
+            </div>
+          </div>
+          <button class="icon-btn" onclick="openEditModal('${ex.id}')">✏️ עריכה</button>
+        </div>
+
+        <div class="ex-meta">
+          <strong>כיוונים:</strong> ${escapeHtml(ex.settings || 'ללא הערות כיוון')}
+          <div><button class="tip-toggle" onclick="toggleTip('${ex.id}')">💡 הצגת/הסתרת טיפ טכני</button></div>
+          <div id="tip-${ex.id}" class="tip-box hidden">${escapeHtml(ex.tips || 'הקפידי על שליטה בירידה ועבודה בטווח תנועה מלא.')}</div>
+        </div>
+
+        <div class="rec-box ${rec.cls}">
+          <div class="rec-title">${rec.title}</div>
+          <div>${rec.text}</div>
+        </div>
+
+        <table class="sets-table">
+          <thead>
+            <tr>
+              <th>סט</th>
+              <th>קודם</th>
+              ${ex.mode === 'weight' ? '<th>משקל (ק״ג)</th>' : ''}
+              <th>${ex.mode === 'timed' ? 'שניות' : 'חזרות'}</th>
+              <th>RIR</th>
+              <th>✓</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${draftSets.map((s, idx) => {
+              const prev = lastSets && lastSets[idx] ? lastSets[idx] : null;
+              const prevTxt = prev
+                ? (ex.mode === 'weight' ? `${prev.weight}×${prev.reps}` : `${prev.reps} ${unitLabel}`)
+                : '—';
+              return `
+                <tr class="${s.done ? 'set-done' : ''}" id="row-${ex.id}-${idx}">
+                  <td><span class="set-num">${idx + 1}</span></td>
+                  <td class="prev-val">${prevTxt}</td>
+                  ${ex.mode === 'weight' ? `
+                    <td><input id="w-${ex.id}-${idx}" type="number" inputmode="decimal" step="0.1" class="num-input"
+                      value="${s.weight}" placeholder="ק״ג"
+                      oninput="updateSet('${ex.id}', ${idx}, 'weight', this.value)" /></td>
+                  ` : ''}
+                  <td><input id="r-${ex.id}-${idx}" type="number" inputmode="numeric" class="num-input"
+                    value="${s.reps}" placeholder="${ex.minReps}-${ex.maxReps}"
+                    oninput="updateSet('${ex.id}', ${idx}, 'reps', this.value)" /></td>
+                  <td>
+                    <select class="rir-select" onchange="updateSet('${ex.id}', ${idx}, 'rir', this.value)">
+                      <option value="0" ${String(s.rir)==='0'?'selected':''}>0</option>
+                      <option value="1" ${String(s.rir)==='1'?'selected':''}>1</option>
+                      <option value="2" ${String(s.rir)==='2'?'selected':''}>2</option>
+                      <option value="3" ${String(s.rir)==='3'?'selected':''}>3+</option>
+                    </select>
+                  </td>
+                  <td>
+                    <button class="done-btn ${s.done ? 'checked' : ''}" onclick="toggleSetDone('${ex.id}', ${idx})">✓</button>
+                  </td>
+                </tr>
+              `;
+            }).join('')}
+          </tbody>
+        </table>
+
+        <div class="ex-actions">
+          <button class="small-btn" onclick="addDraftSet('${ex.id}')">➕ הוסף סט</button>
+          <button class="small-btn" onclick="startTimerById('${ex.id}')">⏱️ מנוחה (${ex.restSec} שנ׳)</button>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  });
+}
+
+function updateSet(exId, idx, field, val) {
+  if (!sessionDraft[exId] || !sessionDraft[exId][idx]) return;
+  const prevVal = sessionDraft[exId][idx][field];
+  sessionDraft[exId][idx][field] = val;
+  if (field === 'weight') {
+    for (let j = idx + 1; j < sessionDraft[exId].length; j++) {
+      if (!sessionDraft[exId][j].done && (sessionDraft[exId][j].weight === '' || String(sessionDraft[exId][j].weight) === String(prevVal))) {
+        sessionDraft[exId][j].weight = val;
+        const nextInp = document.getElementById(`w-${exId}-${j}`);
+        if (nextInp) nextInp.value = val;
+      }
+    }
+  }
+}
+
+function toggleSetDone(exId, idx) {
+  const row = sessionDraft[exId][idx];
+  row.done = !row.done;
+  if (row.done) startTimerById(exId);
+  renderWorkout();
+}
+
+function addDraftSet(exId) {
+  const last = sessionDraft[exId][sessionDraft[exId].length - 1] || { weight: '', reps: '', rir: '2', done: false };
+  sessionDraft[exId].push({ weight: last.weight, reps: '', rir: '2', done: false });
+  renderWorkout();
+}
+
+function toggleTip(exId) {
+  const el = document.getElementById('tip-' + exId);
+  if (el) el.classList.toggle('hidden');
+}
+
+function toggleFatigueMode() {
+  fatigueMode = !fatigueMode;
+  const btn = document.getElementById('fatigueToggle');
+  const ban = document.getElementById('fatigueBanner');
+  btn.classList.toggle('active', fatigueMode);
+  btn.textContent = fatigueMode ? '🔋 מצב עייפות' : '⚡ יום רגיל';
+  ban.classList.toggle('hidden', !fatigueMode);
+  renderWorkout();
+}
+
+function saveWorkout() {
+  const entries = [];
+  let totalLoggedSets = 0;
+  state.exercises.filter(e => !e.hidden).forEach(ex => {
+    const rows = (sessionDraft[ex.id] || []).filter(s => s.reps !== '' && Number(s.reps) > 0);
+    if (rows.length > 0) {
+      totalLoggedSets += rows.length;
+      entries.push({
+        id: ex.id,
+        name: ex.name,
+        machine: ex.machine,
+        mode: ex.mode,
+        sets: rows.map(r => ({
+          weight: ex.mode === 'weight' ? (Number(r.weight) || 0) : 0,
+          reps: Number(r.reps),
+          rir: Number(r.rir)
+        }))
+      });
+    }
+  });
+
+  if (totalLoggedSets === 0) {
+    showToast('הזיני לפחות סט אחד (חזרות/שניות) לפני השמירה 💪');
+    return;
+  }
+
+  state.history.push({
+    date: new Date().toISOString(),
+    fatigueMode,
+    entries
+  });
+  persistState();
+  sessionDraft = {};
+  wuState = { wu1: false, wu2: false, wu3: false, rw1: false, rw2: false };
+  ['wu1','wu2','wu3'].forEach(id => { const el = document.getElementById(id); if (el) el.checked = false; });
+  stopTimer();
+  renderWorkout();
+  renderHistory();
+  showToast(`כל הכבוד! האימון נשמר (${totalLoggedSets} סטים) 🎉 ההמלצות לאימון הבא עודכנו!`);
+}
+
+function startTimerById(exId) {
+  const ex = state.exercises.find(e => e.id === exId);
+  if (!ex || !ex.restSec) return;
+  stopTimer();
+  timerRemaining = Number(ex.restSec) || 90;
+  document.getElementById('timerLabel').textContent = `מנוחה: ${ex.name}`;
+  document.getElementById('timerBar').classList.remove('hidden');
+  updateTimerDisplay();
+  timerEnd = Date.now() + timerRemaining * 1000;
+  timerInterval = setInterval(() => {
+    timerRemaining = Math.ceil((timerEnd - Date.now()) / 1000);
+    if (timerRemaining <= 0) {
+      stopTimer();
+      playBeep();
+      showToast('⏰ נגמרה המנוחה — קדימה לסט הבא!');
+    } else {
+      updateTimerDisplay();
+    }
+  }, 1000);
+}
+
+function adjustTimer(delta) {
+  timerRemaining = Math.max(5, timerRemaining + delta);
+  timerEnd = Date.now() + timerRemaining * 1000;
+  updateTimerDisplay();
+}
+
+function stopTimer() {
+  if (timerInterval) clearInterval(timerInterval);
+  timerInterval = null;
+  document.getElementById('timerBar').classList.add('hidden');
+}
+
+function updateTimerDisplay() {
+  const m = String(Math.floor(timerRemaining / 60)).padStart(2, '0');
+  const s = String(timerRemaining % 60).padStart(2, '0');
+  document.getElementById('timerDisplay').textContent = `${m}:${s}`;
+}
+
+function playBeep() {
+  try {
+    unlockAudio();
+    const ctx = audioCtx;
+    if (!ctx) return;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(880, ctx.currentTime);
+    gain.gain.setValueAtTime(0.18, ctx.currentTime);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start();
+    osc.stop(ctx.currentTime + 0.35);
+  } catch (e) {}
+}
+
+function openEditModal(exId) {
+  const isNew = !exId;
+  const ex = isNew ? {
+    id: '', name: '', group: 'lower', machine: '', settings: '', tips: '',
+    sets: 3, minReps: 10, maxReps: 12, stepKg: 2.5, restSec: 90, mode: 'weight', optional: false
+  } : state.exercises.find(e => e.id === exId);
+
+  document.getElementById('modalTitle').textContent = isNew ? '➕ הוספת תרגיל חדש' : '✏️ עריכת פרטי תרגיל';
+  document.getElementById('editId').value = ex.id;
+  document.getElementById('editName').value = ex.name;
+  document.getElementById('editGroup').value = ex.group;
+  document.getElementById('editMachine').value = ex.machine === 'לעדכון במכון' ? '' : ex.machine;
+  document.getElementById('editSettings').value = ex.settings;
+  document.getElementById('editTips').value = ex.tips;
+  document.getElementById('editSets').value = ex.sets;
+  document.getElementById('editMinReps').value = ex.minReps;
+  document.getElementById('editMaxReps').value = ex.maxReps;
+  document.getElementById('editStep').value = ex.stepKg;
+  document.getElementById('editRest').value = ex.restSec;
+  document.getElementById('editMode').value = ex.mode;
+  document.getElementById('editOptional').checked = !!ex.optional;
+  document.getElementById('editExtraBtns').classList.toggle('hidden', isNew);
+  document.getElementById('editModalBackdrop').classList.remove('hidden');
+}
+
+function closeEditModal() {
+  document.getElementById('editModalBackdrop').classList.add('hidden');
+}
+
+function saveEditModal() {
+  const id = document.getElementById('editId').value;
+  const name = document.getElementById('editName').value.trim();
+  if (!name) { showToast('נא להזין שם תרגיל'); return; }
+
+  const payload = {
+    name,
+    group: document.getElementById('editGroup').value,
+    machine: document.getElementById('editMachine').value.trim() || 'לעדכון במכון',
+    settings: document.getElementById('editSettings').value.trim(),
+    tips: document.getElementById('editTips').value.trim(),
+    sets: Math.max(1, Number(document.getElementById('editSets').value) || 3),
+    minReps: Math.max(1, Number(document.getElementById('editMinReps').value) || 8),
+    maxReps: Math.max(1, Number(document.getElementById('editMaxReps').value) || 12),
+    stepKg: Number(document.getElementById('editStep').value) || 2.5,
+    restSec: Math.max(15, Number(document.getElementById('editRest').value) || 90),
+    mode: document.getElementById('editMode').value,
+    optional: document.getElementById('editOptional').checked
+  };
+
+  if (id) {
+    const idx = state.exercises.findIndex(e => e.id === id);
+    if (idx >= 0) {
+      state.exercises[idx] = { ...state.exercises[idx], ...payload };
+      if (sessionDraft[id] && !sessionDraft[id].some(s => s.done || s.reps !== '')) {
+        delete sessionDraft[id];
+      }
+    }
+  } else {
+    state.exercises.push({ id: 'custom_' + Date.now(), ...payload, defaultWeight: '', hidden: false });
+  }
+  persistState();
+  closeEditModal();
+  renderWorkout();
+  renderSettings();
+  showToast('השינויים נשמרו בהצלחה ✅');
+}
+
+function toggleHideEditing() {
+  const id = document.getElementById('editId').value;
+  const ex = state.exercises.find(e => e.id === id);
+  if (ex) { ex.hidden = true; persistState(); closeEditModal(); renderWorkout(); renderSettings(); showToast('התרגיל הוסתר (ניתן לשחזר בהגדרות)'); }
+}
+
+function deleteEditingExercise() {
+  const id = document.getElementById('editId').value;
+  if (!confirmTap('למחוק את התרגיל מהתוכנית? (ההיסטוריה הקודמת תישמר)')) return;
+  state.exercises = state.exercises.filter(e => e.id !== id);
+  persistState();
+  closeEditModal();
+  renderWorkout();
+  renderSettings();
+  showToast('התרגיל נמחק');
+}
+
+function renderHistory() {
+  const summary = document.getElementById('statsSummary');
+  const list = document.getElementById('historyList');
+  summary.innerHTML = `סה״כ אימונים מתועדים: <strong>${state.history.length}</strong>`;
+  if (state.history.length === 0) {
+    list.innerHTML = '<div class="card" style="text-align:center; color:var(--muted);">עדיין אין אימונים שמורים. סיימי ושמרי את האימון הראשון שלך כדי להתחיל לעקוב אחר ההתקדמות! 💪</div>';
+    return;
+  }
+  list.innerHTML = [...state.history].reverse().map((w, rIdx) => {
+    const origIdx = state.history.length - 1 - rIdx;
+    const d = new Date(w.date);
+    const dateStr = d.toLocaleDateString('he-IL', { weekday: 'short', day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit' });
+    return `
+      <div class="card hist-item">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+          <div class="hist-date">📅 ${dateStr} ${w.fatigueMode ? '(מצב עייפות)' : ''}</div>
+          <button class="small-btn" onclick="deleteHistoryItem(${origIdx})">🗑️</button>
+        </div>
+        ${w.entries.map(e => {
+          const setsTxt = e.sets.map(s => e.mode === 'weight' ? `${s.weight}ק״ג×${s.reps}` : `${s.reps}${e.mode==='timed'?'ש׳':'ח׳'}`).join(' | ');
+          return `<div class="hist-ex"><strong>${escapeHtml(e.name)}</strong> ${e.machine ? `(${escapeHtml(e.machine)})` : ''}: ${setsTxt}</div>`;
+        }).join('')}
+      </div>
+    `;
+  }).join('');
+}
+
+function deleteHistoryItem(idx) {
+  if (!confirmTap('למחוק את תיעוד האימון הזה?', idx)) return;
+  state.history.splice(idx, 1);
+  persistState();
+  renderHistory();
+  renderWorkout();
+}
+
+function renderSettings() {
+  const hidden = state.exercises.filter(e => e.hidden);
+  const el = document.getElementById('hiddenExercisesList');
+  if (hidden.length === 0) {
+    el.innerHTML = 'אין תרגילים מוסתרים כרגע.';
+  } else {
+    el.innerHTML = hidden.map(e => `
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:6px 0; border-bottom:1px solid #f3f4f6;">
+        <span>${escapeHtml(e.name)}</span>
+        <button class="icon-btn" onclick="unhideExercise('${e.id}')">👁️ החזר לתוכנית</button>
+      </div>
+    `).join('');
+  }
+}
+
+function unhideExercise(id) {
+  const ex = state.exercises.find(e => e.id === id);
+  if (ex) { ex.hidden = false; persistState(); renderWorkout(); renderSettings(); showToast('התרגיל הוחזר לתוכנית'); }
+}
+
+function copyBackup() {
+  const json = JSON.stringify(state);
+  navigator.clipboard.writeText(json).then(() => showToast('הגיבוי הועתק! הדביקי ושמרי אצלך בוואטסאפ/פתקים 📋')).catch(() => {
+    document.getElementById('restoreInput').value = json;
+    showToast('קוד הגיבוי הוצג בתיבה — העתיקי אותו ידנית');
+  });
+}
+
+async function downloadBackup() {
+  const json = JSON.stringify(state);
+  try { if (navigator.share) { await navigator.share({ title: 'גיבוי האימון שלי', text: json }); return; } }
+  catch (e) { if (e && e.name === 'AbortError') return; }
+  document.getElementById('restoreInput').value = json;
+  showToast('קוד הגיבוי הוצג בתיבה — העתיקי אותו ידנית');
+}
+
+function restoreBackup() {
+  try {
+    const parsed = JSON.parse(document.getElementById('restoreInput').value.trim());
+    if (!parsed || !Array.isArray(parsed.exercises)) throw new Error();
+    state = normalizeState(parsed);
+    persistState();
+    sessionDraft = {};
+    renderWorkout(); renderHistory(); renderSettings(); renderMetrics();
+    document.getElementById('restoreInput').value = '';
+    showToast('הנתונים שוחזרו בהצלחה! ✅');
+  } catch (e) {
+    showToast('קוד הגיבוי אינו תקין — בדקי שהעתקת את כולו');
+  }
+}
+
+function resetToDefaultProgram() {
+  if (!confirmTap('לשחזר את רשימת התרגילים המקורית? היסטוריית האימונים תישמר.')) return;
+  state.exercises = JSON.parse(JSON.stringify(DEFAULT_EXERCISES));
+  persistState();
+  sessionDraft = {};
+  renderWorkout(); renderSettings();
+  showToast('התוכנית המקורית שוחזרה ✅');
+}
+
+function switchTab(name, btn) {
+  ['workout', 'metrics', 'history', 'settings'].forEach(t => document.getElementById('tab-' + t).classList.toggle('hidden', t !== name));
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  if (name === 'history') renderHistory();
+  if (name === 'settings') renderSettings();
+  if (name === 'metrics') renderMetrics();
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.remove('hidden');
+  clearTimeout(window._toastTimer);
+  window._toastTimer = setTimeout(() => t.classList.add('hidden'), 3200);
+}
+
+function escapeHtml(str) {
+  return String(str || '').replace(/[&<>"']/g, m => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]));
+}
+
+// ===== מדדי גוף: שקילה שבועית / היקפים חודשי / הרכב גוף =====
+const TRACKERS = [
+  { key: 'weight', icon: '⚖️', title: 'שקילה שבועית', every: 7, u: 'ק״ג', fields: [{ k: 'kg', l: 'משקל' }] },
+  { key: 'girth', icon: '📏', title: 'היקפים חודשי', every: 30, u: 'ס״מ', fields: [
+    { k: 'chest', l: 'חזה' }, { k: 'waist', l: 'מותן', h: 'הנקודה הצרה' }, { k: 'belly', l: 'בטן', h: 'בגובה הטבור' },
+    { k: 'hips', l: 'אגן וישבן', h: 'הנקודה הרחבה' }, { k: 'thigh', l: 'ירך עליונה' }, { k: 'arm', l: 'זרוע' }] },
+  { key: 'comp', icon: '🧬', title: 'הרכב גוף אצל התזונאי (כל 3 חודשים)', every: 90, fields: [
+    { k: 'kg', l: 'משקל', u: 'ק״ג' }, { k: 'pbf', l: 'אחוזי שומן (PBF)', u: '%', good: 'down' },
+    { k: 'smm', l: 'מסת שריר שלד (SMM)', u: 'ק״ג', good: 'up' }, { k: 'bfm', l: 'מסת שומן', u: 'ק״ג', good: 'down' },
+    { k: 'bmi', l: 'BMI', u: '' }, { k: 'bmr', l: 'BMR', u: 'קק״ל' }] }
+];
+const metricsAll = {};
+
+function normalizeState(st) {
+  st.history = Array.isArray(st.history) ? st.history : [];
+  st.metrics = st.metrics && typeof st.metrics === 'object' ? st.metrics : {};
+  ['weight', 'girth', 'comp'].forEach(k => { if (!Array.isArray(st.metrics[k])) st.metrics[k] = []; });
+  st.exercises.forEach(e => {
+    if (e.id === 'seated_row' && typeof e.tips === 'string') e.tips = e.tips.replace('בצעי לפני תרגיל זה את חימום הגומייה לכתפיים! ', '');
+  });
+  return st;
+}
+
+function todayStr() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+const fmtDate = s => new Date(s + 'T00:00:00').toLocaleDateString('he-IL', { day: '2-digit', month: '2-digit', year: '2-digit' });
+const fmtNum = n => String(Math.round(n * 100) / 100);
+
+function spark(vals) {
+  if (vals.length < 2) return '';
+  const w = 300, h = 64, p = 6, mn = Math.min(...vals), mx = Math.max(...vals), r = (mx - mn) || 1;
+  const pts = vals.map((v, i) => [p + i * (w - 2 * p) / (vals.length - 1), h - p - (v - mn) / r * (h - 2 * p)]);
+  const end = pts[pts.length - 1];
+  return `<svg viewBox='0 0 ${w} ${h}' style='width:100%; height:64px; margin-top:6px;' aria-hidden='true'>
+    <polyline points='${pts.map(q => q[0].toFixed(1) + ',' + q[1].toFixed(1)).join(' ')}' fill='none' stroke='#7c3aed' stroke-width='2.5' stroke-linejoin='round' stroke-linecap='round' />
+    <circle cx='${end[0].toFixed(1)}' cy='${end[1].toFixed(1)}' r='4' fill='#db2777' /></svg>
+    <div style='font-size:0.72rem; color:var(--muted);'>טווח ${fmtNum(mn)}–${fmtNum(mx)} ק״ג ב-${vals.length} השקילות האחרונות</div>`;
+}
+
+function renderMetrics() {
+  const root = document.getElementById('metricsRoot');
+  if (!root) return;
+  const today = new Date(todayStr() + 'T00:00:00');
+  root.innerHTML = TRACKERS.map((t, ti) => {
+    const list = state.metrics[t.key];
+    const last = list[list.length - 1];
+    const days = last ? Math.round((today - new Date(last.date + 'T00:00:00')) / 864e5) : null;
+    const due = days === null || days >= t.every;
+    const status = days === null ? 'עדיין אין רישום' : due ? `⏰ הגיע הזמן · עודכן לפני ${days} ימים` : days === 0 ? 'עודכן היום' : `עודכן לפני ${days} ימים`;
+    const unit = f => (f.u !== undefined ? f.u : t.u);
+    const inputs = t.fields.map(f => `<div class='field'><label>${f.l}${f.h ? ' — ' + f.h : ''}${unit(f) ? ' (' + unit(f) + ')' : ''}</label>
+      <input type='number' inputmode='decimal' step='any' id='m-${t.key}-${f.k}' placeholder='${last && last.v[f.k] != null ? last.v[f.k] : ''}' /></div>`).join('');
+    const rows = [...list].reverse();
+    const limit = t.key === 'comp' ? 4 : 6;
+    const items = (metricsAll[t.key] ? rows : rows.slice(0, limit)).map(e => {
+      const prev = list[list.indexOf(e) - 1];
+      const vals = t.fields.filter(f => e.v[f.k] != null).map(f => {
+        let d = '';
+        if (prev && prev.v[f.k] != null) {
+          const diff = Math.round((e.v[f.k] - prev.v[f.k]) * 100) / 100;
+          if (diff) d = `<span class='d ${(f.good === 'down' && diff < 0) || (f.good === 'up' && diff > 0) ? 'good' : ''}'>${diff > 0 ? '▲' : '▼'}${fmtNum(Math.abs(diff))}</span>`;
+        }
+        return `${f.l}: <strong>${fmtNum(e.v[f.k])}</strong>${unit(f) ? ' ' + unit(f) : ''}${d}`;
+      }).join(' · ');
+      return `<div class='m-row'><div style='display:flex; justify-content:space-between; align-items:center;'><strong>${fmtDate(e.date)}</strong>
+        <button class='small-btn' onclick='deleteMetric(${ti}, ${e.id})'>🗑️</button></div><div>${vals}</div></div>`;
+    }).join('');
+    return `<div class='card'>
+      <div class='m-head'><div class='m-title'>${t.icon} ${t.title}</div><div class='m-status ${due ? 'due' : ''}'>${status}</div></div>
+      <div class='m-grid'>
+        <div class='field' style='${t.fields.length > 1 ? 'grid-column: 1 / -1;' : ''}'><label>תאריך</label><input type='date' id='m-${t.key}-date' value='${todayStr()}' /></div>
+        ${inputs}
+      </div>
+      <button class='secondary-btn' style='margin-top:0;' onclick='addMetric(${ti})'>➕ שמירת רישום</button>
+      ${t.key === 'weight' ? spark(list.slice(-12).map(e => e.v.kg).filter(Number.isFinite)) : ''}
+      <div style='margin-top:8px;'>${items || `<div class='m-row' style='color:var(--muted);'>עדיין אין רישומים.</div>`}</div>
+      ${rows.length > limit ? `<button class='small-btn' onclick='toggleAllMetrics(${ti})'>${metricsAll[t.key] ? 'הצגת פחות' : 'הצגת כל ' + rows.length + ' הרישומים'}</button>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function addMetric(ti) {
+  const t = TRACKERS[ti], date = document.getElementById('m-' + t.key + '-date').value, v = {};
+  t.fields.forEach(f => {
+    const n = parseFloat(document.getElementById('m-' + t.key + '-' + f.k).value);
+    if (isFinite(n) && n > 0) v[f.k] = n;
+  });
+  if (!date) { showToast('נא לבחור תאריך'); return; }
+  if (!Object.keys(v).length) { showToast('הזיני לפחות מדד אחד'); return; }
+  const list = state.metrics[t.key], i = list.findIndex(e => e.date === date);
+  if (i >= 0) list[i].v = { ...list[i].v, ...v };
+  else list.push({ id: Date.now(), date, v });
+  list.sort((a, b) => (a.date < b.date ? -1 : 1));
+  persistState();
+  renderMetrics();
+  showToast(i >= 0 ? 'הרישום של התאריך הזה עודכן ✅' : 'הרישום נשמר ✅');
+}
+
+function deleteMetric(ti, id) {
+  const t = TRACKERS[ti];
+  if (!confirmTap('למחוק את הרישום הזה?', id)) return;
+  state.metrics[t.key] = state.metrics[t.key].filter(e => e.id !== id);
+  persistState();
+  renderMetrics();
+}
+
+function toggleAllMetrics(ti) {
+  metricsAll[TRACKERS[ti].key] = !metricsAll[TRACKERS[ti].key];
+  renderMetrics();
+}
+
+// ===== התאמות לאייפון / אפליקציית מסך הבית =====
+const DRAFT_KEY = 'sculpt_workout_draft_v1';
+let timerEnd = 0, audioCtx = null, _cfm = { k: '', t: 0 };
+
+function saveDraft() {
+  try { localStorage.setItem(DRAFT_KEY, JSON.stringify({ t: Date.now(), sessionDraft, wuState, fatigueMode })); } catch (e) {}
+}
+function restoreDraft() {
+  try {
+    const d = JSON.parse(localStorage.getItem(DRAFT_KEY) || 'null');
+    if (!d || Date.now() - d.t > 18 * 3600 * 1000) return;
+    sessionDraft = d.sessionDraft || {};
+    Object.assign(wuState, d.wuState || {});
+    ['wu1', 'wu2', 'wu3'].forEach(id => { const el = document.getElementById(id); if (el) el.checked = !!wuState[id]; });
+    if (d.fatigueMode) toggleFatigueMode();
+  } catch (e) {}
+}
+['input', 'change', 'click'].forEach(ev => document.addEventListener(ev, saveDraft));
+document.addEventListener('visibilitychange', () => { if (document.hidden) saveDraft(); });
+window.addEventListener('pagehide', saveDraft);
+
+function unlockAudio() {
+  try {
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+  } catch (e) {}
+}
+['touchend', 'click'].forEach(ev => document.addEventListener(ev, unlockAudio, { passive: true }));
+
+function confirmTap(msg, key) {
+  const k = msg + '|' + (key === undefined ? '' : key);
+  if (_cfm.k === k && Date.now() - _cfm.t < 4000) { _cfm.k = ''; return true; }
+  _cfm = { k, t: Date.now() };
+  showToast(msg + ' — לחצי שוב לאישור');
+  return false;
+}
+
+try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) {}
+restoreDraft();
+
+renderWorkout();
+renderHistory();
+renderSettings();
+renderMetrics();
+</script>
+</body>
+</html>
